@@ -1,0 +1,164 @@
+[
+  {
+    "id": "42",
+    "nombre": "CARLOS LOCONI",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:30:00",
+    "Horas": "=((F27-C27)-(E27-D27))*24"
+  },
+  {
+    "id": "32",
+    "nombre": "JHON MONTALVAN",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:30:00",
+    "Horas": "=((F28-C28)-(E28-D28))*24"
+  },
+  {
+    "id": "40",
+    "nombre": "WILBERT VARGAS",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "18:44:00",
+    "Horas": "=((F29-C29)-(E29-D29))*24"
+  },
+  {
+    "id": "41",
+    "nombre": "WALTER FLORES",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:30:00",
+    "Horas": "=((F30-C30)-(E30-D30))*24"
+  },
+  {
+    "id": "31",
+    "nombre": "RIVER RIVERA",
+    "entrada1": "08:00:00",
+    "salida1": "None",
+    "entrada2": "None",
+    "salida2": "16:30:00",
+    "Horas": "=((F31-C31)-(E31-D31))*24"
+  },
+  {
+    "id": "None",
+    "nombre": "LUIS REYES RAMOS",
+    "entrada1": "07:25:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:58:00",
+    "Horas": "=((F32-C32)-(E32-D32))*24"
+  },
+  {
+    "id": "33",
+    "nombre": "ANDRE DEL AGUILA",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:58:00",
+    "Horas": "=((F33-C33)-(E33-D33))*24"
+  },
+  {
+    "id": "34",
+    "nombre": "DIEGO D\u00cdAZ",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "18:37:00",
+    "Horas": "=((F34-C34)-(E34-D34))*24"
+  },
+  {
+    "id": "35",
+    "nombre": "GILBERTO FASABI",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:30:00",
+    "Horas": "=((F35-C35)-(E35-D35))*24"
+  },
+  {
+    "id": "36",
+    "nombre": "JUBETZY JIMENEZ VILLAVERDE",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:30:00",
+    "Horas": "=((F36-C36)-(E36-D36))*24"
+  },
+  {
+    "id": "37",
+    "nombre": "SAUL PAUCAR CRISPIN",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "19:05:00",
+    "Horas": "=((F37-C37)-(E37-D37))*24"
+  },
+  {
+    "id": "38",
+    "nombre": "KEMY JOAN HINOSTROZA JORGE",
+    "entrada1": "FALT\u00d3",
+    "salida1": "None",
+    "entrada2": "None",
+    "salida2": "None",
+    "Horas": "None"
+  },
+  {
+    "id": "39",
+    "nombre": "VITTO SEBASTIAN TORRES QUISPE",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "18:30:00",
+    "Horas": "=((F39-C39)-(E39-D39))*24"
+  },
+  {
+    "id": "43",
+    "nombre": "GABRIEL CHOQUE POCCO",
+    "entrada1": "07:23:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:30:00",
+    "Horas": "=((F40-C40)-(E40-D40))*24"
+  },
+  {
+    "id": "44",
+    "nombre": "KRYSTEL SAMANEZ SOTO",
+    "entrada1": "08:15:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:30:00",
+    "Horas": "=((F41-C41)-(E41-D41))*24"
+  },
+  {
+    "id": "45",
+    "nombre": "JAVIER ENRIQUE TRUJILLO CASTILLO",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "18:30:00",
+    "Horas": "=((F42-C42)-(E42-D42))*24"
+  },
+  {
+    "id": "None",
+    "nombre": "LUIS VILA",
+    "entrada1": "08:54:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "18:41:00",
+    "Horas": "=((F43-C43)-(E43-D43))*24"
+  },
+  {
+    "id": "None",
+    "nombre": "JUNIOR ALEXANDER VARILLAS ARANDA",
+    "entrada1": "08:00:00",
+    "salida1": "13:00:00",
+    "entrada2": "14:00:00",
+    "salida2": "17:30:00",
+    "Horas": "=((F44-C44)-(E44-D44))*24"
+  }
+]
