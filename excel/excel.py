@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 
 
-workbook = openpyxl.load_workbook("HORARIOS DE INGRESOS 2024.xlsx")
+workbook = openpyxl.load_workbook("HORARIOS DE INGRESOS 2024 -2.xlsx")
 sheet = workbook["JUNIO 2024 "]  # hoja
 
 data_list = []
@@ -12,14 +12,14 @@ data_list = []
 start_row_id_name = 27  # Fila de inicio para IDs y nombres
 start_col_id_name = 1   # Columna de inicio para IDs y nombres
 
-start_row_times = 5    # Fila de inicio para entradas y salidas
-start_col_times = 3     # Columna de inicio para entradas y salidas
-end_col_times = 7       # Columna final para entradas y salidas
+start_row_times = 27    # Fila de inicio para entradas y salidas
+start_col_times = 18     # Columna de inicio para entradas y salidas
+end_col_times = 21       # Columna final para entradas y salidas
 
-# Fecha base para las entradas y salidas
-timeDay = "2024-06-01"
+#Dia
+timeDay = "2024-06-06"
 
-# Formatear la hora con la fecha
+# Formato fecha
 def format_datetime(date_str, time_str):
     try:
         datetime.strptime(time_str, '%H:%M:%S')
@@ -28,7 +28,12 @@ def format_datetime(date_str, time_str):
         return None
 
 # Iterar sobre las filas y leer los IDs y nombres
+print(timeDay)
+
 for index, row in enumerate(sheet.iter_rows(min_row=start_row_id_name, min_col=start_col_id_name, max_col=start_col_id_name + 1, values_only=True)):
+
+    # print(row)
+
     empleado_id = str(row[0]).strip() if row[0] else None
     nombre = str(row[1]).strip() if row[1] else None
 
@@ -39,7 +44,8 @@ for index, row in enumerate(sheet.iter_rows(min_row=start_row_id_name, min_col=s
     # Iterar sobre las filas y leer los datos de entradas y salidas
     time_row = sheet.iter_rows(min_row=start_row_times + index, min_col=start_col_times, max_col=end_col_times, values_only=True)
     time_row = list(time_row)[0]  # Convertir a lista y tomar la primera (y única) fila
-    if len(time_row) == 5:
+    # print(time_row)
+    if len(time_row) == 4:
         entradas_salidas = [str(cell).strip() for cell in time_row]
 
         # Crear objetos para cada entrada y salida
@@ -55,14 +61,14 @@ for index, row in enumerate(sheet.iter_rows(min_row=start_row_id_name, min_col=s
                 }
                 data_list.append(obj)
             else:
-                # Manejar tiempos no válidos si es necesario
+
                 print(f"Tiempo no válido encontrado para el empleado {empleado_id}, {nombre}: {entradas_salidas[i]}")
 
-# Convertir la lista de objetos JSON a formato JSON
+
 json_data = json.dumps(data_list, indent=2)
 output_file = "../horarios_ingresos.json"
 with open(output_file, 'w') as f:
     json.dump(data_list, f, indent=2)
 
-# Imprimir el resultado
+
 print(json_data)
