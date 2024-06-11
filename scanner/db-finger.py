@@ -51,7 +51,7 @@ def registrar_huella():
     zkfp2.Light('green')
 
     time.sleep(0.09)
-    for i in range(3):
+    for i in range(2):
         while True:
             capture = zkfp2.AcquireFingerprint()
             if capture:

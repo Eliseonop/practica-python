@@ -13,11 +13,11 @@ start_row_id_name = 27  # Fila de inicio para IDs y nombres
 start_col_id_name = 1   # Columna de inicio para IDs y nombres
 
 start_row_times = 27    # Fila de inicio para entradas y salidas
-start_col_times = 18     # Columna de inicio para entradas y salidas
-end_col_times = 21       # Columna final para entradas y salidas
+start_col_times = 23     # Columna de inicio para entradas y salidas
+end_col_times = 26       # Columna final para entradas y salidas
 
 #Dia
-timeDay = "2024-06-06"
+timeDay = "2024-06-07"
 
 # Formato fecha
 def format_datetime(date_str, time_str):
